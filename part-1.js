@@ -20,6 +20,11 @@ var city2 = {
 function whichCityIsLarger(a,b){
 	//hint: since a and b are objects, you can access their "pop" property using a.pop
 	//compare populations, and return the "name" property of the appropriate city
+	var a= city1.pop;
+	var b= city2.pop;
+	if(a>b){
+		return city1.name;
+	}
 
 }
 console.log( whichCityIsLarger(city1,city2) ); 
