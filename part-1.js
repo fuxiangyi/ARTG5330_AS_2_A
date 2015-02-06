@@ -24,6 +24,8 @@ function whichCityIsLarger(a,b){
 	var b= city2.pop;
 	if(a>b){
 		return city1.name;
+	}else{
+		return city2.name;
 	}
 
 }
@@ -36,7 +38,9 @@ function whichCityIsOlder(a,b){
 	//Can you still use the dot notation? If not, what should you do?
 	var a=city1["year founded"];
 	var b=city2["year founded"];
-	if(a<b){
+	if(a>b){
+		return city2.name;
+	}else{
 		return city1.name;
 	}
 
