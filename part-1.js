@@ -20,9 +20,8 @@ var city2 = {
 function whichCityIsLarger(a,b){
 	//hint: since a and b are objects, you can access their "pop" property using a.pop
 	//compare populations, and return the "name" property of the appropriate city
-	var a= city1.pop;
-	var b= city2.pop;
-	if(a>b){
+
+	if(a.pop> b.pop){
 		return city1.name;
 	}else{
 		return city2.name;
@@ -36,9 +35,9 @@ console.log( whichCityIsLarger(city1,city2) );
 function whichCityIsOlder(a,b){
 	//hint: more or less the same as above, but notice something weird about the property name "year founded"?
 	//Can you still use the dot notation? If not, what should you do?
-	var a=city1["year founded"];
-	var b=city2["year founded"];
-	if(a>b){
+	var ayear =a["year founded"];
+	var byear =b["year founded"];
+	if(ayear>byear){
 		return city2.name;
 	}else{
 		return city1.name;
