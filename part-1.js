@@ -35,9 +35,7 @@ console.log( whichCityIsLarger(city1,city2) );
 function whichCityIsOlder(a,b){
 	//hint: more or less the same as above, but notice something weird about the property name "year founded"?
 	//Can you still use the dot notation? If not, what should you do?
-	var ayear =a["year founded"];
-	var byear =b["year founded"];
-	if(ayear>byear){
+	if(a["year founded"]>b["year founded"]){
 		return city2.name;
 	}else{
 		return city1.name;
